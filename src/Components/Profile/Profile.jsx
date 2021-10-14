@@ -7,7 +7,7 @@ const Profile = () => {
   const email = useSelector((state) => state.userData.email);
   const accessible = useSelector((state) => state.accessible);
   const dispatch = useDispatch();
-  const clikButtonExit = () => {
+  const clickButtonExit = () => {
     dispatch(exitAccount());
   };
   debugger;
@@ -30,7 +30,7 @@ const Profile = () => {
           <button
             className={s.exitProfileButton}
             onClick={() => {
-              clikButtonExit();
+              clickButtonExit();
             }}
           >
             Выйти

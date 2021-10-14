@@ -1,9 +1,16 @@
+import {UserDataType} from "../Components/redux/app-reducer";
+
+export type ProfileType = {
+    status: number
+    userData: UserDataType
+}
 export const api = {
+
     getProfile() {
-        debugger;
+
         return new Promise(function (resolve) {
             return setTimeout(() => {
-                const profile = {
+                const profile:ProfileType = {
                     status: 200,
                     userData: {
                         email: "steve.jobs@example.com",
